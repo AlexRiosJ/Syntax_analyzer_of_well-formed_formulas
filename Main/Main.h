@@ -49,13 +49,13 @@ TreeNode treeNode_create(char data){		//To create a treeNode
 		n->isComplete = TRUE;
 	}else{
 		switch(data){		//These are the characters that the node can receive
-			case '\xAA':	n->data = data;	n->type = UNARY;	break;		//Hexadecimal for printing and scanning in cmd
-			case '(':		n->data = data;	n->type = OPEN_PA;	break;
-			case ')':		n->data = data;	n->type = CLOSE_PA;	break;
-			case '\x26':	n->data = data;	n->type = BINARY;	break;		//Hexadecimal for printing and scanning in cmd
-			case '\x7C':	n->data = data;	n->type = BINARY;	break;		//Hexadecimal for printing and scanning in cmd
-			case '#':		n->data = data;	n->type = BINARY;	break;
-			case '$':		n->data = data;	n->type = BINARY;	break;
+			case '\xAA':	n->data = data;	n->type = UNARY;	break;	//Hexadecimal for printing and scanning in cmd
+			case '(':	n->data = data;	n->type = OPEN_PA;	break;
+			case ')':	n->data = data;	n->type = CLOSE_PA;	break;
+			case '\x26':	n->data = data;	n->type = BINARY;	break;	//Hexadecimal for printing and scanning in cmd
+			case '\x7C':	n->data = data;	n->type = BINARY;	break;	//Hexadecimal for printing and scanning in cmd
+			case '#':	n->data = data;	n->type = BINARY;	break;
+			case '$':	n->data = data;	n->type = BINARY;	break;
 			default :	return NULL;
 		}
 	}
