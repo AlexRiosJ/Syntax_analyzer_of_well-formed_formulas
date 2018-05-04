@@ -149,6 +149,6 @@ int main(){
 		}
 		exitFlag = outMenu();
 		pause();
-	}while(!exitFlag);
+	} while(!exitFlag);
 	return 0;
 }
